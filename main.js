@@ -7,11 +7,12 @@ var hamburger = $(".fa-bars");
 var hamburgerMenu = $(".hamburger-menu")
 var menuClose = $(".close");
 
-// VERSIONE 1🐱‍👤
+// // VERSIONE 1🐱‍👤
+//   // secondo la funzione del toggle (display e hide) al click il menu diventa display "block"🐱‍👤
 // hamburger.click(function() {
 //   hamburgerMenu.toggle(600);
 // });
-//
+// // al secondo click il menu diventa display "none"🐱‍👤
 // menuClose.click(function() {
 //   hamburgerMenu.toggle(600);
 // });
@@ -31,7 +32,7 @@ var menuClose = $(".close");
 // // grazie a toggleClass("active") ad ogni click la classe active viene inserita e si rimuove🐱‍👤
 
 
-// VERSIONE 3
+// VERSIONE 3🐱‍👤
 // al click parte il fadein di 700ms, e la classe active viene aggiunta al menu🐱‍👤
 hamburger.click(function() {
   hamburgerMenu.fadeIn(700, function(){
