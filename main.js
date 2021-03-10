@@ -32,12 +32,14 @@ var menuClose = $(".close");
 
 
 // VERSIONE 3
+// al click parte il fadein di 700ms, e la classe active viene aggiunta al menu🐱‍👤
 hamburger.click(function() {
   hamburgerMenu.fadeIn(700, function(){
     hamburgerMenu.addClass('active');
    });
 });
 
+// al click parte il fadeout di 700ms, e al menu viene rimossa la classe active🐱‍👤
 menuClose.click(function() {
   hamburgerMenu.fadeOut(700, function() {
     hamburgerMenu.removeClass('active');
