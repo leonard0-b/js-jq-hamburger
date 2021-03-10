@@ -18,14 +18,28 @@ var menuClose = $(".close");
 
 // // VERSIONE 2🐱‍👤
 // al click su ".fa-bars" il ".hamburger-menu" diventa "active" (vedi css)🐱‍👤
-hamburger.click(function() {
-  // ".hamburger-menu" col toggle diventa active e quindi si mostra🐱‍👤
-  hamburgerMenu.toggleClass("active");
-});
-
-// al secondo click con toggle la classe "active" si rimuove🐱‍👤
-menuClose.click(function() {
-  hamburgerMenu.toggleClass("active");
-});
+// hamburger.click(function() {
+//   // ".hamburger-menu" col toggle diventa active e quindi si mostra🐱‍👤
+//   hamburgerMenu.toggleClass("active");
+// });
+//
+// // al secondo click con toggle la classe "active" si rimuove🐱‍👤
+// menuClose.click(function() {
+//   hamburgerMenu.toggleClass("active");
+// });
 
 // // grazie a toggleClass("active") ad ogni click la classe active viene inserita e si rimuove🐱‍👤
+
+
+// VERSIONE 3
+hamburger.click(function() {
+  hamburgerMenu.fadeIn(700, function(){
+    hamburgerMenu.addClass('active');
+   });
+});
+
+menuClose.click(function() {
+  hamburgerMenu.fadeOut(700, function() {
+    hamburgerMenu.removeClass('active');
+  });
+});
