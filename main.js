@@ -9,14 +9,14 @@ var menuClose = $(".close");
 
 // VERSIONE 1🐱‍👤
 // hamburger.click(function() {
-//   hamburgerMenu.toggle("");
+//   hamburgerMenu.toggle(600);
 // });
 //
 // menuClose.click(function() {
-//   hamburgerMenu.toggle("");
+//   hamburgerMenu.toggle(600);
 // });
 
-// VERSIONE 2🐱‍👤
+// // VERSIONE 2🐱‍👤
 // al click su ".fa-bars" il ".hamburger-menu" diventa "active" (vedi css)🐱‍👤
 hamburger.click(function() {
   // ".hamburger-menu" col toggle diventa active e quindi si mostra🐱‍👤
@@ -28,4 +28,4 @@ menuClose.click(function() {
   hamburgerMenu.toggleClass("active");
 });
 
-// grazie a toggleClass("active") ad ogni click la classe active viene inserita e si rimuove🐱‍👤
+// // grazie a toggleClass("active") ad ogni click la classe active viene inserita e si rimuove🐱‍👤
