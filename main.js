@@ -34,15 +34,25 @@ var menuClose = $(".close");
 
 // VERSIONE 3🐱‍👤
 // al click parte il fadein di 700ms, e la classe active viene aggiunta al menu🐱‍👤
-hamburger.click(function() {
-  hamburgerMenu.fadeIn(700, function(){
-    hamburgerMenu.addClass('active');
-   });
-});
+// hamburger.click(function() {
+//   hamburgerMenu.fadeIn(700, function(){
+//     hamburgerMenu.addClass('active');
+//    });
+// });
+//
+// // al click parte il fadeout di 700ms, e al menu viene rimossa la classe active🐱‍👤
+// menuClose.click(function() {
+//   hamburgerMenu.fadeOut(700, function() {
+//     hamburgerMenu.removeClass('active');
+//   });
+// });
 
-// al click parte il fadeout di 700ms, e al menu viene rimossa la classe active🐱‍👤
+// VERSIONE 3🐱‍👤
+  // secondo la funzione del toggle al click il menu fa fadeIn🐱‍👤
+hamburger.click(function() {
+  hamburgerMenu.fadeToggle(600);
+});
+// al secondo click il menu fa fadeOut🐱‍👤
 menuClose.click(function() {
-  hamburgerMenu.fadeOut(700, function() {
-    hamburgerMenu.removeClass('active');
-  });
+  hamburgerMenu.fadeToggle(600);
 });
